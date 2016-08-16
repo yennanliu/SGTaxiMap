@@ -11,6 +11,11 @@ demo :  ![image](https://github.com/yennanliu/web_development/blob/master/flask_
         ![image](https://github.com/yennanliu/web_development/blob/master/flask_sg_data_taxi_text_1/sg_taxi_test2.png)
 
 
+
+http://ec2-52-24-54-29.us-west-2.compute.amazonaws.com:5000/
+
+
+
 run :
 
 step 1 
