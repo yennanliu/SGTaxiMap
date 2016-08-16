@@ -3,7 +3,7 @@ SG taxi heatmap
 
 
 
-LINE VIEW : http://ec2-52-24-54-29.us-west-2.compute.amazonaws.com:5000/
+LIVE VIEW : http://ec2-52-24-54-29.us-west-2.compute.amazonaws.com:5000/
 
 demo :  ![image](https://github.com/yennanliu/web_development/blob/master/flask_sg_data_taxi_text_1/sg_taxi_test1.png)
         ![image](https://github.com/yennanliu/web_development/blob/master/flask_sg_data_taxi_text_1/sg_taxi_test2.png)
