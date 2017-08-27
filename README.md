@@ -1,15 +1,13 @@
-SG taxi heatmap 
+9SG taxi heatmap 
 
 
 
 
 LIVE VIEW : <http://ec2-35-167-225-131.us-west-2.compute.amazonaws.com:5000/>
 
-demo :  ![image](https://github.com/yennanliu/web_development/blob/master/flask_sg_data_taxi_text_1/sg_taxi_test1.png)
-        ![image](https://github.com/yennanliu/web_development/blob/master/flask_sg_data_taxi_text_1/sg_taxi_test2.png)
-
-
-
+demo :  
+		![image](https://github.com/yennanliu/SGTaxiMap/blob/master/data/taxi_location.png)
+		![image](https://github.com/yennanliu/SGTaxiMap/blob/master/data/heatmap.png)
 
 
 
@@ -19,7 +17,7 @@ run :
 step 1 
 
 ```
-$cd flask_sg_data_taxi_text_1
+$cd SGTaxiMap
 $python run.py
 
 ```
@@ -27,8 +25,6 @@ $python run.py
 step 2 
 
 visit http://127.0.0.1:5000 via browser, 
-
-
 
 
 
