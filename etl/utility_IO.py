@@ -11,6 +11,11 @@ import datetime as dt
 
 
 
+now = datetime.datetime.now()
+date_ = now.strftime("%Y-%m-%d")
+
+
+
 class save_output(object):
 
   def __init__(self, df):
@@ -18,7 +23,7 @@ class save_output(object):
 
   def save_user_profile(self):
     try:
-      self.df.to_csv('taxi_{}.csv'.format(date_))
+      self.df.to_csv('output/SG_taxi_{}.csv'.format(date_))
       print ('Succefully save taxi location data  to /output at {}'.format(date_))
     except Exception as e:
       print ('Save failed') 
@@ -27,8 +32,8 @@ class save_output(object):
   def save_user_profile_DB(self):
     try:
       import sqlite3
-      conn = sqlite3.connect("taxi_{}.db".format(date_))
-      self.df.to_sql("user_profile", conn, if_exists="replace")
+      conn = sqlite3.connect("output/SG_taxi.db")
+      self.df.to_sql("taxi", conn, if_exists="append")
       print ('Succefully save taxi location data as sqlite db to /output at {}'.format(date_))
     except Exception as e:
       print ('Save failed') 

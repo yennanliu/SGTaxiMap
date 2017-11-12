@@ -33,8 +33,14 @@ class Agg_taxi_locations(luigi.Task):
 	def get_locations():
 		df = get_lon_lat()
 		print (df.head())
+		#save_output(df).save_user_profile()
+		save_output(df).save_user_profile_DB()
 	def run(self):
 		Agg_taxi_locations.get_locations()
+
+
+
+
 
 
 
@@ -42,3 +48,9 @@ class Agg_taxi_locations(luigi.Task):
 if __name__ == '__main__':
 
     luigi.run( )
+
+
+
+
+
+
