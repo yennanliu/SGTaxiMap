@@ -14,10 +14,10 @@ def test():
 
 
 
-@app.route('/test1')
+@app.route('/dev1')
 def test1():
    
-    return render_template('test1.html') 
+    return render_template('dev1.html') 
 
 
 
