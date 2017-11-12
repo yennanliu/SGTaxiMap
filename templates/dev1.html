@@ -12,6 +12,13 @@
   <h3 class="logo">Current Available Taxi :  {{ taxi_count }} </h3>
   </ul>
 
+<!--credit :  https://github.com/mourner/simpleheat/blob/gh-pages/demo/index.html -->
+   <div class="options">
+        <label>Radius </label><input type="range" id="radius" value="25" min="10" max="50" /><br />
+        <label>Time </label><input type="range" id="blur" value="15" min="10" max="50" />
+    </div>
+<!-- dev -->
+
   <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
 
   <!-- Load Leaflet from CDN-->
@@ -23,7 +30,7 @@
 
   <style>
     body { margin:0; padding:0; }
-    #map { position: absolute; top:100; bottom:0; right:0; left:0; }
+    #map { position: absolute; top:200; bottom:0; right:0; left:0; }
   </style>
 </head>
 <body>
