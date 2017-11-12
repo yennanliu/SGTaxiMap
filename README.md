@@ -52,7 +52,7 @@ visit http://127.0.0.1:5000
 	- http://harrywood.co.uk/maps/examples/leaflet/marker-array.view.html
 
 - Automated heat map 
-- http://rmaps.github.io/blog/posts/animated-choropleths/index.html
+	- http://rmaps.github.io/blog/posts/animated-choropleths/index.html
 
 
 
