@@ -1,0 +1,9 @@
+
+# get taxi locations 
+
+
+
+0 * * * * cd SGTaxiMap &&  /anaconda/envs/g_dash/bin/python etl/job_luigi.py   Agg_taxi_locations
+
+
+
