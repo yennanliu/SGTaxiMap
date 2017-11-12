@@ -22,16 +22,13 @@ def get_lon_lat():
 	df = pd.DataFrame(result['features'][0]['geometry']['coordinates'])
 	df.columns = ['lon', 'lat']
 	df['timestamp']=dt.datetime.today().strftime("%Y-%m-%d %H:%M:%S")
-	df_=[]
-	for k in data:
-		df_.append(k[::-1])
 	print (df)
 	return  df
 
 
 
-if __name__ == '__main__':
-	get_lon_lat()
+#if __name__ == '__main__':
+#	get_lon_lat()
 
 
 
