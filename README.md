@@ -43,7 +43,7 @@ visit http://127.0.0.1:5000
 
 ```
 
-## Refence 
+## Reference 
 
 - Open source projct 
 	- https://github.com/JTLX/SGTaxiHeatMap/blob/master/update_heat.py
