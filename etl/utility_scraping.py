@@ -22,7 +22,7 @@ def get_lon_lat():
 	df = pd.DataFrame(result['features'][0]['geometry']['coordinates'])
 	df.columns = ['lon', 'lat']
 	df['timestamp']=dt.datetime.today().strftime("%Y-%m-%d %H:%M:%S")
-	print (df)
+	#print (df)
 	return  df
 
 
