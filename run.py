@@ -16,8 +16,11 @@ def test():
 
 @app.route('/dev1')
 def test1():
-   
-    return render_template('dev1.html') 
+	# hard code taxi_count for dev
+	taxi_count = 1000
+	print (taxi_count)
+	# render taxi_count value to html 
+	return render_template('dev1.html', taxi_count=taxi_count) 
 
 
 
