@@ -11,14 +11,10 @@ env:  python 3
 
 
 
+#!/usr/bin/env python
 
-import csv
-import requests
-from bs4 import BeautifulSoup
-import lxml
 import urllib, json
 import pandas as pd, numpy as np
-import pprint
 import datetime as dt 
 
 
