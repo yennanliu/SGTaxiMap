@@ -8,7 +8,7 @@
   <li><a href="/dev1">dev view</a></li>
   <h3 class="logo">Current Available Taxi :  {{ taxi_count }} </h3>
   <span id="target"></span>
-  <label>Radius </label><input type="range" value="0" min="0" max="1" step="0.01" oninput="myFunction(this.value)" />
+  <label>Hour </label><input type="range" value="0" min="0" max="12" step="1" oninput="myFunction(this.value)" />
   <span id="currentValue">0</span>
   </ul>
 
@@ -50,7 +50,8 @@ in production you'd be better off hosting this library yourself -->
 <div id="map"></div>
 
 <script>
-
+/* credit : http://jsfiddle.net/2RCVF/ */
+/* credit : https://foundation.zurb.com/sites/docs/v/5.5.3/components/range_slider.html */
 function myFunction(myValue){
   document.getElementById("currentValue").innerHTML = myValue;
 }
@@ -63,26 +64,20 @@ function displayMyVar(targetElementId) {
 document.getElementById(targetElementId).innerHTML = myVar;
 }
  
-  console.log(radius.value)
-  alert(radius.value);
-  document.getElementById('radius').value
-
+console.log(radius.value)
+alert(radius.value);
+document.getElementById('radius').value
 **/ 
 
 
 
-function get(id) {
-    return document.getElementById(id);
-  }
+function get(id) {return document.getElementById(id);}
 
-  var map = L.map('map').setView([ 40.706, -73.926], 14);
-
-  L.esri.basemapLayer('Gray').addTo(map);
-
-  L.esri.Heat.heatmapFeatureLayer({
-    url: 'https://services.arcgis.com/rOo16HdIMeOBI4Mb/ArcGIS/rest/services/Graffiti_Reports/FeatureServer/0',
-    radius: 12
-  }).addTo(map);
+var map = L.map('map').setView([ 40.706, -73.926], 14);
+L.esri.basemapLayer('Gray').addTo(map);
+L.esri.Heat.heatmapFeatureLayer({
+  url: 'https://services.arcgis.com/rOo16HdIMeOBI4Mb/ArcGIS/rest/services/Graffiti_Reports/FeatureServer/0',
+    radius: 12}).addTo(map);
 </script>
 
 </body>
