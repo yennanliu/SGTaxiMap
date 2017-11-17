@@ -2,22 +2,23 @@
 <head>
   <meta charset=utf-8 />
   <title>Points as a heatmap</title>
-
-
   <a href="https://github.com/yennanliu/SGTaxiMap"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
-
   <ul class="menu">
   <li><a href="/">taxi view</a></li>
   <li><a href="/dev1">dev view</a></li>
   <h3 class="logo">Current Available Taxi :  {{ taxi_count }} </h3>
+  <span id="target"></span>
+  <label>Radius </label><input type="range" value="0" min="0" max="1" step="0.01" oninput="myFunction(this.value)" />
+  <span id="currentValue">0</span>
   </ul>
 
 <!--credit :  https://github.com/mourner/simpleheat/blob/gh-pages/demo/index.html -->
-   <div class="options">
-        <label>Radius </label><input type="range" id="radius" value="25" min="10" max="50" /><br />
-        <label>Time </label><input type="range" id="blur" value="15" min="10" max="50" />
-    </div>
+<!--<label>Radius </label><input type="range" id="radius" value="35" min="10" max="50" /><br /> -->
+
+
+
 <!-- dev -->
+
 
   <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
 
@@ -33,23 +34,47 @@
     #map { position: absolute; top:200; bottom:0; right:0; left:0; }
   </style>
 </head>
-<body>
 
+       
 
 
 
 
 <!-- Include Leaflet.heat via rawgit.com
 in production you'd be better off hosting this library yourself -->
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://rawgit.com/Leaflet/Leaflet.heat/gh-pages/dist/leaflet-heat.js"></script>
-
 <!-- Load Heatmap Feature Layer from CDN -->
 <script src="https://cdn.jsdelivr.net/leaflet.esri.heatmap-feature-layer/2.0.0-beta.1/esri-leaflet-heatmap-feature-layer.js"></script>
 
 <div id="map"></div>
 
 <script>
+
+function myFunction(myValue){
+  document.getElementById("currentValue").innerHTML = myValue;
+}
+
+/** 
+var myVar = 42;
+var myVar = radius.value;
+
+function displayMyVar(targetElementId) {
+document.getElementById(targetElementId).innerHTML = myVar;
+}
+ 
+  console.log(radius.value)
+  alert(radius.value);
+  document.getElementById('radius').value
+
+**/ 
+
+
+
+function get(id) {
+    return document.getElementById(id);
+  }
+
   var map = L.map('map').setView([ 40.706, -73.926], 14);
 
   L.esri.basemapLayer('Gray').addTo(map);
@@ -62,3 +87,6 @@ in production you'd be better off hosting this library yourself -->
 
 </body>
 </html>
+
+
+
