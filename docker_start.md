@@ -1,9 +1,9 @@
 
-# step 1  : build the dockerfile 
+### step 1  : build the dockerfile 
 ```bash 
 docker image build -t sgtaximap_docker .
 ```
-# step 2 : run the app 
+### step 2 : run the app 
 
 - http://containertutorials.com/docker-compose/flask-simple-app.html
 - https://medium.com/@ikod/dockerize-simple-python-flask-app-62461efbe58e
