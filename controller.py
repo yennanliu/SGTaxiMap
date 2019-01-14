@@ -14,7 +14,7 @@ env:  python 3
 #!/usr/bin/env python
 
 import urllib, json
-import pandas as pd, numpy as np
+import pandas as pd
 import datetime as dt 
 
 
