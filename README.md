@@ -1,41 +1,30 @@
 ## SG taxi heatmap 
 
 
-
-
-LIVE VIEW : <http://ec2-35-167-225-131.us-west-2.compute.amazonaws.com:5000/>
+LIVE VIEW : <https://f100clt.blogspot.com/2018/02/blog-post.html?fbclid=IwAR2iIKED5YW6YNU99nks8XvVyQNMgrf-ytSwe6TXzhPQB2uRceXXrYhLuas>
 
 demo :  
 		![image](https://github.com/yennanliu/SGTaxiMap/blob/master/data/taxi_location.png)
 		![image](https://github.com/yennanliu/SGTaxiMap/blob/master/data/heatmap.png)
 
 
+## Run via localhost :
 
-
-## Run the heatmap :
-
-step 1 
-
-```Bash
+```bash
+# STEP 1)
 # get repo 
 git clone https://github.com/yennanliu/SGTaxiMap
 cd SGTaxiMap
 
-```
-
-step 2 
-
-```Bash
+# STEP 2)
 python run.py
-```
-```
-# view the heatmap via browser 
+# access the app via browser 
 visit http://127.0.0.1:5000 
 ```
 
-## Run the heatmap (via docker) :
+## Run via docker:
 
-```Bash
+```bash
 # https://github.com/yennanliu/SGTaxiMap/blob/master/docker_start.md
 git clone https://github.com/yennanliu/SGTaxiMap.git && cd  SGTaxiMap
 docker image build -t sgtaximap_docker .
@@ -44,9 +33,9 @@ docker run -d -p 5000:5000 sgtaximap_docker
 ```
 
 
-## Data collect :
+## ETL job  ( taxi data collect) :
 
-```Bash 
+```bash 
 # can modify cron job in /crontab.txt 
 # collected data can either saved as csv or DB 
  /anaconda/envs/<your_dev_env>/bin/python etl/job_luigi.py   Agg_taxi_locations
@@ -65,5 +54,10 @@ docker run -d -p 5000:5000 sgtaximap_docker
 	- http://rmaps.github.io/blog/posts/animated-choropleths/index.html
 
 
+## TODO 
+
+- Integrate with travis CI
+- Auto deploy to heroku
+- ETL job demo 
 
 
