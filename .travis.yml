@@ -19,9 +19,11 @@ script:
 before_deploy:
   - echo "$REGISTRY_PASS" | docker login -u "$REGISTRY_USER" --password-stdin && echo "docker login OK" || echo "docker login failed"
 
-deploy:
+deploy_docker_hub:
   provider: script
   # docker commit and push 
   script: (echo '--- DEPLOY PART 1 ---' && docker commit $container_id yennanliu/sg_taxi_env_instance:V1 && docker push yennanliu/sg_taxi_env_instance:V1) 
   on:
     branch: master
+
+deploy_heroku:
