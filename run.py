@@ -19,4 +19,4 @@ def test1():
 	return render_template('dev1.html', taxi_count=taxi_count) 
 
 if __name__ == '__main__':
-   app.run(host='0.0.0.0')
+   app.run(host='0.0.0.0',port=5000)
