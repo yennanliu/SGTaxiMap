@@ -15,10 +15,7 @@
 <!--credit :  https://github.com/mourner/simpleheat/blob/gh-pages/demo/index.html -->
 <!--<label>Radius </label><input type="range" id="radius" value="35" min="10" max="50" /><br /> -->
 
-
-
 <!-- dev -->
-
 
   <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
 
@@ -35,20 +32,13 @@
   </style>
 </head>
 
-       
-
-
-
-
 <!-- Include Leaflet.heat via rawgit.com
 in production you'd be better off hosting this library yourself -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://rawgit.com/Leaflet/Leaflet.heat/gh-pages/dist/leaflet-heat.js"></script>
 <!-- Load Heatmap Feature Layer from CDN -->
 <script src="https://cdn.jsdelivr.net/leaflet.esri.heatmap-feature-layer/2.0.0-beta.1/esri-leaflet-heatmap-feature-layer.js"></script>
-
 <div id="map"></div>
-
 <script>
 /* credit : http://jsfiddle.net/2RCVF/ */
 /* credit : https://foundation.zurb.com/sites/docs/v/5.5.3/components/range_slider.html */
@@ -69,8 +59,6 @@ alert(radius.value);
 document.getElementById('radius').value
 **/ 
 
-
-
 function get(id) {return document.getElementById(id);}
 
 var map = L.map('map').setView([ 40.706, -73.926], 14);
@@ -79,9 +67,5 @@ L.esri.Heat.heatmapFeatureLayer({
   url: 'https://services.arcgis.com/rOo16HdIMeOBI4Mb/ArcGIS/rest/services/Graffiti_Reports/FeatureServer/0',
     radius: 12}).addTo(map);
 </script>
-
 </body>
 </html>
-
-
-

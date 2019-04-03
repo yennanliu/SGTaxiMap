@@ -1,6 +1,3 @@
-#!/usr/bin/env python
-
-
 import datetime
 import pandas as pd
 import numpy as np
@@ -8,8 +5,6 @@ import sys
 import os
 import urllib, json
 import datetime as dt 
-
-
 
 def get_lon_lat():
 	request_headers = {"api-key": "gWpVyvnoSuAeW1J27L7W4nNG4gbQwfVC"}
@@ -25,16 +20,5 @@ def get_lon_lat():
 	#print (df)
 	return  df
 
-
-
 #if __name__ == '__main__':
 #	get_lon_lat()
-
-
-
-
-
-
-
-
-

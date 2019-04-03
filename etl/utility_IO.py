@@ -1,6 +1,3 @@
-#!/usr/bin/env python
-
-
 import datetime
 import pandas as pd
 import numpy as np
@@ -9,12 +6,8 @@ import os
 import urllib, json
 import datetime as dt 
 
-
-
 now = datetime.datetime.now()
 date_ = now.strftime("%Y-%m-%d")
-
-
 
 class save_output(object):
 
@@ -37,8 +30,3 @@ class save_output(object):
       print ('Succefully save taxi location data as sqlite db to /output at {}'.format(date_))
     except Exception as e:
       print ('Save failed') 
-
-
-
-
-
