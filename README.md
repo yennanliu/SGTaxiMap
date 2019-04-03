@@ -1,7 +1,6 @@
 ## SG taxi heatmap 
 
-
-LIVE VIEW : <https://f100clt.blogspot.com/2018/02/blog-post.html?fbclid=IwAR2iIKED5YW6YNU99nks8XvVyQNMgrf-ytSwe6TXzhPQB2uRceXXrYhLuas>
+[LIVE VIEW](http://infinite-reaches-93848.herokuapp.com/)
 
 demo :  
 		![image](https://github.com/yennanliu/SGTaxiMap/blob/master/data/taxi_location.png)
