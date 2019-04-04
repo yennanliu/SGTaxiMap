@@ -6,7 +6,6 @@ demo :
 		![image](https://github.com/yennanliu/SGTaxiMap/blob/master/data/taxi_location.png)
 		![image](https://github.com/yennanliu/SGTaxiMap/blob/master/data/heatmap.png)
 
-
 ## Run via localhost :
 
 ```bash
@@ -30,7 +29,6 @@ docker image build -t sgtaximap_docker .
 docker run -d -p 5000:5000 sgtaximap_docker
 
 ```
-
 
 ## ETL job  ( taxi data collect) :
 
@@ -57,6 +55,4 @@ docker run -d -p 5000:5000 sgtaximap_docker
 
 - Integrate with travis CI
 - Auto deploy to heroku
-- ETL job demo 
-
-
+- ETL job  
