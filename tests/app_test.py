@@ -13,5 +13,5 @@ def test_get_taxi_location():
     assert response.status_code == 200
 
 if __name__ == "__main__":
-    #test_index()
     test_dummy()
+    test_get_taxi_location()
