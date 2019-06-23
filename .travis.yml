@@ -11,7 +11,6 @@ script:
   - echo ' ----------------- BUILD  DOCKER IMAGE ----------------- '
   - echo REGISTRY_USER = $REGISTRY_USER && echo REGISTRY_PASS = $REGISTRY_PASS
   - echo 'docker bulid...' && docker build . -t sg_taxi_env_instance
-  #- echo 'pytest...' && docker run -it sg_taxi_env_instance /bin/bash -c "(python run.py &)  && python -m pytest"
   - echo 'docker test...' docker run -it sg_taxi_env_instance echo 'docker test 123'
   - container_id="` docker ps -a | awk 'FNR == 2 {print $1}'`" && echo container_id = $container_id && image_id="` docker ps -a | awk 'FNR == 2 {print $2}'`" && echo image_id = $image_id 
   - docker ps -a 
