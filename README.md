@@ -18,7 +18,7 @@ demo :
 <details>
 <summary>Quick-Start</summary>
 
-### Run via localhost :
+### Run via local host :
 
 ```bash
 # STEP 1)
@@ -35,13 +35,13 @@ visit http://127.0.0.1:5000
 
 ```bash
 # https://github.com/yennanliu/SGTaxiMap/blob/master/docker_start.md
-git clone https://github.com/yennanliu/SGTaxiMap.git && cd  SGTaxiMap
+cd && git clone https://github.com/yennanliu/SGTaxiMap.git && cd SGTaxiMap
 docker image build -t sgtaximap_docker .
 docker run -d -p 5000:5000 sgtaximap_docker
 
 ```
 
-### ETL job  ( taxi data collect) :
+### Run ETL job  (taxi data collect) :
 
 ```bash 
 # can modify cron job in /crontab.txt 
