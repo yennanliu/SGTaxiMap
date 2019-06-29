@@ -2,10 +2,14 @@
 
 [![Build Status](https://travis-ci.org/yennanliu/Xjob.svg?branch=master)](https://travis-ci.org/yennanliu/SGTaxiMap)
 [![PRs](https://img.shields.io/badge/PRs-welcome-6574cd.svg)](https://github.com/yennanliu/SGTaxiMap/pulls)
+
+### Deploy to Heroku 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/yennanliu/SGTaxiMap)
 
+### LIVE VIEW 
 [LIVE VIEW](http://sgtaxi-heroku-app.herokuapp.com/)
 
+### DEMO 
 demo :  
 		![image](https://github.com/yennanliu/SGTaxiMap/blob/master/data/taxi_location.png)
 		![image](https://github.com/yennanliu/SGTaxiMap/blob/master/data/heatmap.png)
