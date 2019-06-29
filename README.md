@@ -1,6 +1,9 @@
 ## SG taxi heatmap 
 
-[LIVE VIEW](http://infinite-reaches-93848.herokuapp.com/)
+[![Build Status](https://travis-ci.org/yennanliu/Xjob.svg?branch=master)](https://travis-ci.org/yennanliu/SGTaxiMap)
+[![PRs](https://img.shields.io/badge/PRs-welcome-6574cd.svg)](https://github.com/yennanliu/SGTaxiMap/pulls)
+
+[LIVE VIEW](http://sgtaxi-heroku-app.herokuapp.com/)
 
 demo :  
 		![image](https://github.com/yennanliu/SGTaxiMap/blob/master/data/taxi_location.png)
@@ -53,6 +56,4 @@ docker run -d -p 5000:5000 sgtaximap_docker
 
 ## TODO 
 
-- Integrate with travis CI
-- Auto deploy to heroku
 - ETL job  
