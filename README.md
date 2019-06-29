@@ -43,9 +43,8 @@ docker run -d -p 5000:5000 sgtaximap_docker
 ```
 
 ## Reference 
-
-<summary>Reference</summary>
 <details>
+<summary>Reference</summary>
 - Open source projct 
 	- https://github.com/JTLX/SGTaxiHeatMap/blob/master/update_heat.py
 	- https://data.gov.sg/developer
