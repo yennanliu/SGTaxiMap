@@ -9,21 +9,24 @@ demo :
 		![image](https://github.com/yennanliu/SGTaxiMap/blob/master/data/taxi_location.png)
 		![image](https://github.com/yennanliu/SGTaxiMap/blob/master/data/heatmap.png)
 
-## Run via localhost :
+## Quick start 
+<details>
+<summary>Quick-Start</summary>
+
+### Run via localhost :
 
 ```bash
 # STEP 1)
 # get repo 
 git clone https://github.com/yennanliu/SGTaxiMap
 cd SGTaxiMap
-
 # STEP 2)
 python run.py
 # access the app via browser 
 visit http://127.0.0.1:5000 
 ```
 
-## Run via docker:
+### Run via docker:
 
 ```bash
 # https://github.com/yennanliu/SGTaxiMap/blob/master/docker_start.md
@@ -32,6 +35,7 @@ docker image build -t sgtaximap_docker .
 docker run -d -p 5000:5000 sgtaximap_docker
 
 ```
+</details>
 
 ## ETL job  ( taxi data collect) :
 
@@ -56,5 +60,10 @@ docker run -d -p 5000:5000 sgtaximap_docker
 </details>
 
 ## TODO 
-
+<details>
+<summary>TODO</summary>
 - ETL job  
+- Backend managment page 
+- Dynamic map 
+- DB configuration 
+</details>
