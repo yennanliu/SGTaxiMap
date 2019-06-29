@@ -44,6 +44,8 @@ docker run -d -p 5000:5000 sgtaximap_docker
 
 ## Reference 
 
+<summary>Reference</summary>
+<details>
 - Open source projct 
 	- https://github.com/JTLX/SGTaxiHeatMap/blob/master/update_heat.py
 	- https://data.gov.sg/developer
@@ -52,7 +54,7 @@ docker run -d -p 5000:5000 sgtaximap_docker
 
 - Automated heat map 
 	- http://rmaps.github.io/blog/posts/animated-choropleths/index.html
-
+</details>
 
 ## TODO 
 
