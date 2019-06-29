@@ -1,7 +1,7 @@
 #!/bin/sh
 
 #################################################################
-# SHELL SCRIPT DEPLOY SG-TAXI APP TO HERORU
+# SHELL SCRIPT DEPLOY SG-TAXI APP TO HEROKU MANUALLY
 #################################################################
 
 heroku create sgtaxi-heroku-app --buildpack heroku/python
