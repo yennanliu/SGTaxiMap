@@ -35,9 +35,8 @@ docker image build -t sgtaximap_docker .
 docker run -d -p 5000:5000 sgtaximap_docker
 
 ```
-</details>
 
-## ETL job  ( taxi data collect) :
+### ETL job  ( taxi data collect) :
 
 ```bash 
 # can modify cron job in /crontab.txt 
@@ -45,6 +44,7 @@ docker run -d -p 5000:5000 sgtaximap_docker
  /anaconda/envs/<your_dev_env>/bin/python etl/job_luigi.py   Agg_taxi_locations
 
 ```
+</details>
 
 ## Reference 
 <details>
@@ -62,8 +62,8 @@ docker run -d -p 5000:5000 sgtaximap_docker
 ## TODO 
 <details>
 <summary>TODO</summary>
-- ETL job  
-- Backend managment page 
-- Dynamic map 
-- DB configuration 
+	- ETL job  
+	- Backend managment page 
+	- Dynamic map 
+	- DB configuration 
 </details>
