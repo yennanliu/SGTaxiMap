@@ -19,6 +19,7 @@ class TestDB(unittest.TestCase):
     def tearDown(self):
         db.session.remove()
         db.drop_all()
+        #pass 
 
     def testModel(self):
         # taxi 1 
