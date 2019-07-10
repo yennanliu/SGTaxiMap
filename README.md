@@ -23,21 +23,21 @@ demo :
 ```bash
 # STEP 1)
 # get repo 
-git clone https://github.com/yennanliu/SGTaxiMap
-cd SGTaxiMap
+$ git clone https://github.com/yennanliu/SGTaxiMap
+$ cd && cd SGTaxiMap
 # STEP 2)
-python run.py
+$ python run.py
 # access the app via browser 
-visit http://127.0.0.1:5000 
+# visit http://127.0.0.1:5000 
 ```
 
 ### Run via docker:
 
 ```bash
 # https://github.com/yennanliu/SGTaxiMap/blob/master/docker_start.md
-cd && git clone https://github.com/yennanliu/SGTaxiMap.git && cd SGTaxiMap
-docker image build -t sgtaximap_docker .
-docker run -d -p 5000:5000 sgtaximap_docker
+$ cd && git clone https://github.com/yennanliu/SGTaxiMap.git && cd SGTaxiMap
+$ docker image build -t sgtaximap_docker .
+$ docker run -d -p 5000:5000 sgtaximap_docker
 
 ```
 
@@ -46,7 +46,14 @@ docker run -d -p 5000:5000 sgtaximap_docker
 ```bash 
 # can modify cron job in /crontab.txt 
 # collected data can either saved as csv or DB 
- /anaconda/envs/<your_dev_env>/bin/python etl/job_luigi.py   Agg_taxi_locations
+$ /anaconda/envs/<your_dev_env>/bin/python etl/job_luigi.py   Agg_taxi_locations
+
+```
+
+### Run test 
+```bash
+$ export PYTHONPATH=$(pwd)
+$ pytest -v tests/
 
 ```
 </details>
