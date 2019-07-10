@@ -16,7 +16,7 @@ class save_output(object):
 
   def save_user_profile(self):
     try:
-      self.df.to_csv('output/SG_taxi_{}.csv'.format(date_))
+      self.df.to_csv('SG_taxi_{}.csv'.format(date_))
       print ('Succefully save taxi location data  to /output at {}'.format(date_))
     except Exception as e:
       print ('Save failed') 
@@ -25,8 +25,8 @@ class save_output(object):
   def save_user_profile_DB(self):
     try:
       import sqlite3
-      conn = sqlite3.connect("output/SG_taxi.db")
+      conn = sqlite3.connect("SG_taxi.db")
       self.df.to_sql("taxi", conn, if_exists="append")
-      print ('Succefully save taxi location data as sqlite db to /output at {}'.format(date_))
+      print ('Succefully save taxi location data as sqlite db as current route at {}'.format(date_))
     except Exception as e:
       print ('Save failed') 
