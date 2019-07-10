@@ -16,9 +16,9 @@ manager.add_command('db', MigrateCommand)
 class Taxi(db.Model):
     __tablename__ = 'taxi'
     id = db.Column(db.Integer, primary_key=True)
-    lon = db.column(db.String(64))
-    lat = db.column(db.String(64))
-    timestamp = db.column(db.String(64))
+    lon = db.Column(db.String(64))
+    lat = db.Column(db.String(64))
+    timestamp = db.Column(db.String(64))
 
     def __init__(self
                  , lon
@@ -33,4 +33,4 @@ class Taxi(db.Model):
         return '<Taxi {}>'.format(self.timestamp)
 
 if __name__ == '__main__':
-	Manager.run()
+	manager.run()
