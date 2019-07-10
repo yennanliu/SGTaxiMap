@@ -11,3 +11,6 @@ class TaxiData(db.Model):
         self.lon = lon
         self.lat = lat
         self.timestamp = timestamp
+
+    def __repr__(self):
+         return '<Taxi {}>'.format(self.timestamp)

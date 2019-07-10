@@ -29,5 +29,8 @@ class Taxi(db.Model):
         self.lat = lat
         self.timestamp = timestamp
 
+    def __repr__(self):
+        return '<Taxi {}>'.format(self.timestamp)
+
 if __name__ == '__main__':
 	Manager.run()
