@@ -11,8 +11,8 @@
 
 ### DEMO 
 demo :  
-		![image](https://github.com/yennanliu/SGTaxiMap/blob/master/data/taxi_location.png)
-		![image](https://github.com/yennanliu/SGTaxiMap/blob/master/data/heatmap.png)
+		![image](https://github.com/yennanliu/SGTaxiMap/blob/master/doc/taxi_location.png)
+		![image](https://github.com/yennanliu/SGTaxiMap/blob/master/doc/heatmap.png)
 
 ## Quick start 
 <details>
