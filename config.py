@@ -14,20 +14,20 @@ manager.add_command('db', MigrateCommand)
 
 
 class Taxi(db.Model):
+    __tablename__ = 'taxi'
+    id = db.Column(db.Integer, primary_key=True)
+    lon = db.column(db.String(64))
+    lat = db.column(db.String(64))
+    timestamp = db.column(db.String(64))
 
-	__tablename__ = 'taxi'
-	id = db.Column(db.Integer, primary_key=True)
-	lon = db.column(db.String(64))
-	lat = db.column(db.String(64))
-	timestamp = db.column(db.String(64))
-
-	def __init__(self,
-				 lon,
-				 lat,
-				 timestamp):
-		self.lon = lon 
-		self.lat = lat 
-		self.timestamp = timestamp
+    def __init__(self
+                 , lon
+                 , lat
+                 , timestamp
+                 ):
+        self.lon = lon
+        self.lat = lat
+        self.timestamp = timestamp
 
 if __name__ == '__main__':
 	Manager.run()
