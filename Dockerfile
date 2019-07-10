@@ -1,4 +1,5 @@
 FROM continuumio/miniconda3
+ENV PYTHONPATH="$PYTHONPATH:/app"
 COPY . /app
 WORKDIR /app
 RUN pip install -r requirements.txt

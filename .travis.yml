@@ -18,7 +18,7 @@ before_install:
 
 script:
   - echo ' -----------------  STEP 2) TEST  ----------------- '
-  - echo 'UNIT TEST' && docker run -it sg_taxi_env_instance /bin/bash -c "export PYTHONPATH=$(pwd) && pytest -v tests/"  
+  - echo 'UNIT TEST' && docker run -it sg_taxi_env_instance /bin/bash -c "pytest -v tests/"  
 
 before_deploy:
   - echo "$REGISTRY_PASS" | docker login -u "$REGISTRY_USER" --password-stdin && echo "docker login OK" || echo "docker login failed"
