@@ -14,13 +14,13 @@ def get_taxi_location():
     print (stop_list)
     return render_template('taxi.html',stop_list=stop_list), 200 
 
-@app.route('/dev1')
+@app.route('/dev_page')
 def get_taxi_location_dev():
 	# hard code taxi_count for dev
 	taxi_count = 1000
 	print (taxi_count)
 	# render taxi_count value to html 
-	return render_template('dev1.html', taxi_count=taxi_count), 200 
+	return render_template('dev_page.html', taxi_count=taxi_count), 200 
 
 if __name__ == '__main__':
    app.run(host='0.0.0.0',port=5000)
