@@ -1,7 +1,6 @@
-import pytest, unittest 
-
-from run import app 
+import pytest, unittest   
 from model import db, TaxiData
+from run import app 
 #from config import db 
 
 class TestDB(unittest.TestCase):
