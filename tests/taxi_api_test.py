@@ -1,4 +1,6 @@
-import pytest, unittest 
+import pytest, unittest
+import sys
+sys.path.append(".") 
 from controller import call_taxi_api
 
 def test_call_taxi_api():

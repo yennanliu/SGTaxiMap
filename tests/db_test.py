@@ -1,4 +1,6 @@
-import pytest, unittest   
+import pytest, unittest
+import sys
+sys.path.append(".")   
 from model import db, TaxiData
 from run import app 
 #from config import db 
