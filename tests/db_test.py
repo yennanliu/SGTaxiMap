@@ -7,12 +7,14 @@ from run import app
 
 class TestDB(unittest.TestCase):
 
-    def setUp(self):
-        app.config['TESTING'] = True
-        app.config['WTF_CSRF_ENABLED'] = False
-        app.config['DEBUG'] = False
-        app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + 'database.db'
+    def __init_(self):
         self.app = app.test_client()
+        self.app.config['TESTING'] = True
+        self.app.config['WTF_CSRF_ENABLED'] = False
+        self.app.config['DEBUG'] = False
+        self.app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + 'database.db'
+
+    def setUp(self):
         db.drop_all()
         db.create_all()
         self.assertEqual(app.debug, False)
@@ -20,22 +22,25 @@ class TestDB(unittest.TestCase):
     def tearDown(self):
         db.session.remove()
         db.drop_all()
-        #pass 
 
     def testModel(self):
-        # taxi 1 
+        # set up test DB 
+        self.setUp()
+        # insert test data : taxi 1 
         taxi1 = TaxiData(103, 1.23, '2019-01-01')
         db.session.add(taxi1)
-        # taxi2 
+        # insert test data : taxi2 
         taxi2 = TaxiData(104, 1.24, '2019-01-02')
         db.session.add(taxi2)
-        #taxi 3 
+        # insert test data : taxi 3 
         taxi3 = TaxiData(105, 1.25, '2019-01-03')
         db.session.add(taxi3)
-
+        # commit change 
         db.session.commit()
+        # validate the DB op
         assert len(TaxiData.query.all()) == 3 
+        # tear down test DB 
+        self.tearDown()
 
- 
 if __name__ == "__main__":
     unittest.main()
