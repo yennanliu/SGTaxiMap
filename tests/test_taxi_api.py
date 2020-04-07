@@ -7,8 +7,8 @@ from controller import Taxi
 
 @pytest.fixture(scope="module")
 def initTaxi():
-	taxi = Taxi()
-	return taxi
+    taxi = Taxi()
+    return taxi
 
 def test_call_taxi_api(initTaxi):
     result, response = initTaxi.call_taxi_api()
