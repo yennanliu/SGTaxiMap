@@ -63,27 +63,3 @@ class Taxi:
 #         k.append(0.5)
 #     print (df)    
 #     return (df_)
-
-
-# def call_taxi_api():
-#     request_headers = {"api-key": "gWpVyvnoSuAeW1J27L7W4nNG4gbQwfVC"}
-#     request = urllib.request.Request('https://api.data.gov.sg/v1/transport/taxi-availability',headers=request_headers)
-#     response = urllib.request.urlopen(request)
-#     # Convert HTTPResponse object to dictionary
-#     result = json.loads(response.read().decode('utf-8'))
-#     return result, response
-
-# def taxi():
-#     result, response = call_taxi_api()
-#     (json.loads(json.dumps(result, ensure_ascii=False)))
-#     data = result['features'][0]['geometry']['coordinates']
-#     df = pd.DataFrame(result['features'][0]['geometry']['coordinates'])
-#     df.columns = ['lon', 'lat']
-#     df['timestamp']=dt.datetime.today().strftime("%Y-%m-%d %H:%M:%S")
-#     df_=[]
-#     for k in data:
-#         df_.append(k[::-1])
-#     for k in df_:
-#         k.append(0.5)
-#     print (df)    
-#     return (df_)
