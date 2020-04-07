@@ -1,8 +1,10 @@
 from flask import Flask, render_template, redirect, url_for, request
-from controller import taxi
+from controller import Taxi
 import csv
 
 app = Flask(__name__)
+
+taxi = Taxi()
 
 @app.route('/hello_world')
 def hello_world():
@@ -10,7 +12,7 @@ def hello_world():
 
 @app.route('/')
 def get_taxi_location():
-    stop_list = taxi()
+    stop_list = taxi.get_taxi_data()
     print (stop_list)
     return render_template('taxi.html',stop_list=stop_list), 200 
 
