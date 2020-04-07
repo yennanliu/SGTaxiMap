@@ -4,3 +4,5 @@ gunicorn
 requests
 pytest
 flask_sqlalchemy
+flask_script
+flask_migrate
