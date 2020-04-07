@@ -3,3 +3,4 @@ pandas
 gunicorn
 requests
 pytest
+flask_sqlalchemy
