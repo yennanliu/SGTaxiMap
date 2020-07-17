@@ -18,7 +18,7 @@ demo :
 <details>
 <summary>Quick-Start</summary>
 
-### Run via local host :
+### Run (Manually)
 
 ```bash
 # STEP 1)
@@ -31,14 +31,16 @@ $ python run.py
 # visit http://127.0.0.1:5000 
 ```
 
-### Run via docker:
-
+### Run (docker)
+```bash
+docker run -d -p 5000:5000 yennanliu/sgtaximap_docker:v1
+```
+### Build
 ```bash
 # https://github.com/yennanliu/SGTaxiMap/blob/master/docker_start.md
 $ cd && git clone https://github.com/yennanliu/SGTaxiMap.git && cd SGTaxiMap
 $ docker image build -t sgtaximap_docker .
 $ docker run -d -p 5000:5000 sgtaximap_docker
-
 ```
 
 ### Run ETL job  (taxi data collect) :
